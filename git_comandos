@@ -1,4 +1,0 @@
-git init
-|-->  git add . (sempre antes do commit)
-|--> git rm -f arquivo (deleta do git e da pasta)
-|-- git commit -m 'mensagem'
