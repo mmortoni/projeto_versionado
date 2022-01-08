@@ -1,0 +1,6 @@
+git init
+|-->  git add . (sempre antes do commit)
+|--> git rm (-f) arquivo (deleta do git e da pasta)
+|--> git restore index.html  ()
+|--> git checkout -- index.html  (restaura a versão anterior do arquivo, antes de um git add)
+|-- git commit -m 'mensagem'
