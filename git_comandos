@@ -4,3 +4,23 @@ git init
 |--> git restore index.html  ()
 |--> git checkout -- index.html  (restaura a versão anterior do arquivo, antes de um git add)
 |-- git commit -m 'mensagem'
+
+git remote -v
+
+git remote add origin https://github.com/mmortoni/projeto_versionado.git
+git push --set-upstream origin master (empurra/mover do ambiente local para o servidor)
+git pull (puxar/extrair do servidor para o ambiente local)
+- executar: fetch e 
+git clone - repositório do servidor
+git fetch  (apresenta a situação atual das branchs no servidor)
+
+Voltar a um determinado estado
+git reset --soft HEAD~
+git reset --soft ab319bc
+
+$ git reset HEAD~
+ou
+$ git reset --mixed HEAD~
+
+git reset --hard HEAD~
+o ponteiro HEAD será movido para o commit anterior e as áreas de stage e working serão revertidas para o mesmo estado do commit apontado pelo HEAD.
