@@ -24,3 +24,15 @@ $ git reset --mixed HEAD~
 
 git reset --hard HEAD~
 o ponteiro HEAD será movido para o commit anterior e as áreas de stage e working serão revertidas para o mesmo estado do commit apontado pelo HEAD.
+
+
+git checkout - receber as branchs do servidor e atualizar o estado da branch localmente.
+git merge 
+
+Se você estiver no branch feature-1 e quiser puxar master -- (talvez para obter as atualizações mescladas mais recentes/reduzir a chance de conflitos de mesclagem), faça:
+
+git pull
+git merge origin/develop
+
+
+Como pull executa uma mesclagem nas alterações recuperadas, você deve garantir que seu trabalho local seja confirmado antes de executar o pull comando. Se você se deparar com um conflito de mesclagem que não pode resolver, ou se decidir encerrar a mesclagem, você pode usar git merge --abort para levar a ramificação de volta para onde estava antes de fazer o pull.
