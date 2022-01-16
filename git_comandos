@@ -37,9 +37,25 @@ git merge origin/develop
 
 Como pull executa uma mesclagem nas alterações recuperadas, você deve garantir que seu trabalho local seja confirmado antes de executar o pull comando. Se você se deparar com um conflito de mesclagem que não pode resolver, ou se decidir encerrar a mesclagem, você pode usar git merge --abort para levar a ramificação de volta para onde estava antes de fazer o pull.
 
+-------------------------------------------------
 git merge (trabalho aprovado) --> master (remoto)
-git checkout master (branch master - local desejada)
 
+git checkout master (branch master - local desejada)
 git merge feature/atualizacao_html
 git log (verifica localmente branch/master e mais as ações executadas na feature/atualizacao_html)
 git push (atualiza a master remoto)
+-------------------------------------------------
+ git branch -a
+  feature/atualizacao_html
+  main
+* master
+  remotes/origin/feature/atualizacao_html
+  remotes/origin/main
+  remotes/origin/master
+
+git merge origin/main
+git pull origin main --allow-unrelated-histories
+git push (atualiza o master remoto)
+-----------------------------------------------
+Remoção da branch local
+git branch -D feature/atualizacao_html
